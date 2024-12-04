@@ -4,7 +4,7 @@ function percent10 (salary) {
 
     let newValue = salary + (salary * 10 / 100);
 
-    document.getElementById('result-account').value = `R$ ${newValue.toString().replace('.', ',')}`;
+    document.getElementById('result-account').value = `R$ ${newValue.toFixed(2).toString().replace('.', ',')}`;
 
 }
 
@@ -13,7 +13,7 @@ function percent15 (salary) {
     salary = parseFloat(document.getElementById('value-bank').value);
 
     let newValue = salary + (salary * 15 / 100);
-    document.getElementById('result-account').value = `R$ ${newValue.toString().replace('.', ',')}`;
+    document.getElementById('result-account').value = `R$ ${newValue.toFixed(2).toString().replace('.', ',')}`;
 }
 
 //20% OF TIP
@@ -21,7 +21,7 @@ function percent20 (salary) {
     salary = parseFloat(document.getElementById('value-bank').value);
 
     let newValue = salary + (salary * 20 / 100);
-    document.getElementById('result-account').value = `R$ ${newValue.toString().replace('.', ',')}`;
+    document.getElementById('result-account').value = `R$ ${newValue.toFixed(2).toString().replace('.', ',')}`;
 }
 
 //PERSONALIZED TIP
@@ -30,7 +30,7 @@ function percentPerson(salary) {
     let percentPerson = Number(prompt('Digite o valor desejado: '));
 
     let newValue = salary + (salary * percentPerson / 100 );
-    document.getElementById('result-account').value = `R$ ${newValue.toString().replace('.', ',')}`;
+    document.getElementById('result-account').value = `R$ ${newValue.toFixed(2).toString().replace('.', ',')}`;
 }
 
 //CLEAN
