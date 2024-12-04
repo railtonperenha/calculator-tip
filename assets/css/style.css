@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --my-black: #1B1725;
+    --my-red: #F24236;
+    --my-blue: #78A0D4;
+    --my-yellow: #F5D491;
+    --my-hard-yellow: #F4B844;
+    --my-gray: #CFD7C7;
+    --my-green: #9AB87A;
+
+    --font-title: Lexend;
+    --font-subtitle: Inter;
+    --font-text: Darker Grotesque;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-text);
+    font-size: 62.5%;
+}
+
+section {
+    height: 100vh;
+    background-color: var(--my-black);
+}
+
+button {
+    font-family: var(--font-subtitle);
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    width: 60%;
+    cursor: pointer;
+}
+
+/* SECTION */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+.logo {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    
+}
+
+.logo img {
+    width: 15rem;
+}
+
+.title p {
+    font-family: var(--font-title);
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.container-inputs {
+    padding: 2rem;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 1.5rem;
+    background-color: var(--my-gray);
+}
+
+.input-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.input-account label {
+    font-family: var(--font-text);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.input-account input {
+    margin-bottom: 1rem;
+    width: 60%;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--my-yellow);
+    
+}
+
+.input-account input::-webkit-inner-spin-button {
+    -webkit-appearance: none;    
+}
+
+.input-account input:focus {
+    outline: 1px solid var(--my-hard-yellow);
+}
+
+.tip-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.tip-buttons .button {
+    color: var(--my-gray);
+    background-color: var(--my-blue);
+    transition: all ease .5s;
+}
+
+.tip-buttons .button:hover {
+    background-color: var(--my-green);
+}
+
+.tip-buttons #clean {
+    color: var(--my-gray);
+    background-color: var(--my-hard-yellow);
+    transition: all ease 0.5s;
+}
+
+.tip-buttons #clean:hover {
+    background-color: var(--my-red);
+}
+
+/* RESPONSIVE PC */
+@media (min-width: 1200px) {
+
+    .tip-buttons button {
+        padding: 1.3rem 0;
+    }
+
+    .tip-buttons .button, #clean {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+}

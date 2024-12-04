@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gorjetas</title>
+    <link rel="shortcut icon" href="assets/imgs/calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <section>
+
+        <div class="container">
+
+            <div class="container-inputs">
+
+                <div class="logo">
+                    <img src="assets/imgs/dollar.png" alt="">
+                </div>
+
+                <div class="title">
+                    <p>Calculadora de Gorjeta</p>
+                </div>
+
+                <div class="input-account">
+                    <label for="value-bank" id="total-value">Valor Conta</label>
+                    <input type="number" id="value-bank" placeholder="R$ 0,00" required>
+
+                    <label for="result-account" id="result-value">Valor Total</label>
+                    <input type="text" id="result-account" placeholder="Conta + Gorjeta" readonly>
+                </div>
+
+                <div class="tip-buttons">
+                    <button class="button" onclick="percent10()">Gorjeta: 10%</button>
+
+                    <button class="button" onclick="percent15()">Gorjeta: 15%</button>
+                    <button class="button" onclick="percent20()">Gorjeta: 20%</button>
+                    <button class="button" onclick="percentPerson()">Gorjeta Personalizada</button>
+
+                    <button id="clean">Limpar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
